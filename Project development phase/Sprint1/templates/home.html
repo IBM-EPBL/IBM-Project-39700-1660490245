@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Customer Care Registry</title>
+    <style>
+      body{
+      background-image:url('job1.jpg')
+      background-repeat: no-repeat;
+      background-size: cover;
+      }
+    </style>
+    
+    <meta charset="UTF-8">
+        <!-- favicon -->
+        <!-- <link rel="shortcut icon" href="/assets/img/favicon.ico" type="image/x-icon"> -->
+        <!-- <link rel="icon" href="/assets/img/favicon.ico" type="image/x-icon"> -->
+        <link rel="icon" type="image/png" sizes="16x16" href="/assets/img/favicon-32x32.png">
+        <!-- bootstrap css cdn -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+        <!-- css stylesheet -->
+        <link rel="stylesheet" href="{{url_for('static',filename='css/style.css') }}">
+        <!-- font styles cdn -->
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Alegreya&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Alegreya:wght@600&display=swap" rel="stylesheet">
+</head>
+<body>
+  
+
+  <script>
+    window.watsonAssistantChatOptions = {
+      integrationID: "f099d426-1271-4afe-a430-68cd21ac29c1", // The ID of this integration.
+      region: "au-syd", // The region your integration is hosted in.
+      serviceInstanceID: "a37fa79d-78e0-41c0-9c65-df35129637c9", // The ID of your service instance.
+      onLoad: function(instance) { instance.render(); }
+    };
+    setTimeout(function(){
+      const t=document.createElement('script');
+      t.src="https://web-chat.global.assistant.watson.appdomain.cloud/versions/" + (window.watsonAssistantChatOptions.clientVersion || 'latest') + "/WatsonAssistantChatEntry.js";
+      document.head.appendChild(t);
+    });
+  </script>
+        <!-- bootstrap navbar -->
+        <nav class="navbar sticky-top navbar-expand-lg navbar-dark">
+            <div class="container-fluid">
+              <a class="main-logo-img mt-3" href="#"><img src="/static/img/smartinternz.png" alt="sheep-logo" height="150px" width="150px">
+                <!-- <a class="navbar-brand" href="index.html">JobPortal</a> -->
+              </a>
+              <h1><center>JOB PORTAL</center></h1>
+              <div class="row donate-sponsor">
+                <a type="button" class="btn btn-success mr-1" id="donate" href="login">LOGIN</a>
+                <a type="button" class="btn btn-warning mr-1" id="sponsor" href="register">REGISTER</a>
+                <a type="button" class="btn btn-primary mr-1" id="sponsor" href="contact.html">CONTACT US</a>
+              </div>
+            </div>
+          </nav>
+          <!-- navbar ends -->
+
+        <!-- what we focus on -->
+        <section class="our-focus">
+            <div class="container">
+              <h2 class="text-center mt-3">ABOUT US</h2>
+              <div class="row ml-3 mt-3">
+                <div class="col-lg-3 mr-5" id="focus-first">
+                  <div class="card" style="width: 19rem;">
+                    <!-- <img src="assets/img/home kids.jpg" class="card-img-top" alt="..."> -->
+                    <div class="card-body">
+                      <h5 class="card-title">Mission</h5>
+                      <p class="card-text">Career Link assists job seekers and employers to achieve employment goals. The agency works with community partners to respond to emerging needs and opportunities with creativity and professionalism.This trait makes it easier for job seekers to decide on a specific career.
+
+
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-3 mr-5" id="focus-second">
+                  <div class="card" style="width: 20rem;">
+                    <!-- <img src="assets/img/friendship day.JPG" class="card-img-top" alt="..."> -->
+                    <div class="card-body">
+                      <h5 class="card-title">Vision</h5>
+                      <p class="card-text">I plan to achieve this career vision through one-on-one learning situations (teaching and coaching); creating and publishing empowering and uplifting web content (career college success wellness); and developing and leading inspiring workshops.It defines what success and excellence look like to you. </p>
+                    </div>
+                  </div>
+                </div>
+                
+                <div class="col-lg-3 ml-5" id="focus-third">
+                  <div class="card" style="width: 20rem;">
+                    <!-- <img src="assets/img/health camp.jpg" class="card-img-top" alt="..."> -->
+                    <div class="card-body">
+                      <h5 class="card-title">Objective</h5>
+                      <p class="card-text">Having lots of skills but wondering which job will best suit you? Don’t need to worry! We have come up with a skill recommender solution through which the fresher or the skilled person can log in and find the jobs by using the search option or they can directly interact with the chatbot and get their dream job.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+          <!-- focus section ends -->
+
+        <!-- footer starts -->
+          <!-- Site footer -->
+          <footer class="site-footer">
+            <div class="container mt-5">
+              <div class="row">
+                <div class="col-sm-12 col-md-6">
+                  <h3>JobPortal</h3>
+                  <p class="text-justify">A job portal helps both the job seekers and recruiters finding the right organization for the employees. In the case of job seekers, according to their educational qualification, experience and their preferences, the job portal shows the list of companies to the job seeker.</p>
+                </div>
+
+                <div class="col-xs-6 col-md-3">
+                  <h4>Get in Touch</h4>
+                  <ul class="footer-links">
+                    <li><a href="mailto:test@gmail.com">jobrecommender774@gmail.com</a></li>
+                    <li><a href="">+91 9876543210</a></li>
+                  </ul>
+                </div>
+
+                
+              </div>
+            <hr>
+            
+                
+              </div>
+            </div>
+      </footer>
+       
+
+          </body>
+
+</html>
+<style>
+  body{
+    background-color:#a6a6a6;
+  }
+</style>
